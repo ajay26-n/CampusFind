@@ -1,0 +1,108 @@
+import { LostFoundItem } from '@/types/item';
+
+export const MOCK_ITEMS: LostFoundItem[] = [
+  {
+    id: 'item-1',
+    title: 'Student ID Card (CS)',
+    description: 'Blue lanyard with RFID student card in the name of Alex Rivera. Left on table 4 at the main dining hall.',
+    type: 'found',
+    category: 'Cards & IDs',
+    location: 'Cafeteria Table 4',
+    date: 'Today, 1:15 PM',
+    // No user-uploaded image -> displays predefined "Cards & IDs" fallback image
+    imageUrl: undefined,
+    contactName: 'Cafeteria Desk',
+    contactPhone: '+1 (555) 019-2834',
+  },
+  {
+    id: 'item-2',
+    title: 'Casio Scientific Calculator',
+    description: 'Black FX-991EX calculator with custom white stickers on the back cover. Essential for midterms!',
+    type: 'lost',
+    category: 'Electronics',
+    location: 'Eng Hall 302',
+    date: 'Today, 11:30 AM',
+    // User-uploaded photo
+    imageUrl: 'https://images.unsplash.com/photo-1594980596870-8aa52a78d8cd?w=600&auto=format&fit=crop&q=80',
+    contactName: 'Rohan Sharma',
+    contactPhone: '+1 (555) 014-9921',
+  },
+  {
+    id: 'item-3',
+    title: 'Navy Blue Hydro Flask',
+    description: '32oz wide mouth insulated bottle with university soccer crest sticker. In like-new condition.',
+    type: 'found',
+    category: 'Bottles & Containers',
+    location: 'Library 2nd Fl',
+    date: 'Today, 9:45 AM',
+    // User-uploaded photo
+    imageUrl: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&auto=format&fit=crop&q=80',
+    contactName: 'Library Desk',
+    contactPhone: '+1 (555) 012-7711',
+  },
+  {
+    id: 'item-4',
+    title: 'Dorm & Bike Key Ring',
+    description: '3 silver keys on a braided red keychain with a miniature skateboard charm.',
+    type: 'lost',
+    category: 'Keys',
+    location: 'Bike Racks',
+    date: 'Yesterday, 4:20 PM',
+    // No user-uploaded image -> displays predefined "Keys" fallback image
+    imageUrl: undefined,
+    contactName: 'Maya Patel',
+    contactPhone: '+1 (555) 018-4432',
+  },
+  {
+    id: 'item-5',
+    title: 'Sony Earbuds Case',
+    description: 'Matte black charging case for WF-1000XM4 earbuds found under row C in the main auditorium.',
+    type: 'found',
+    category: 'Electronics',
+    location: 'Auditorium C',
+    date: 'Yesterday, 2:10 PM',
+    // No user-uploaded image -> displays predefined "Electronics" fallback image
+    imageUrl: undefined,
+    contactName: 'Campus Security',
+    contactPhone: '+1 (555) 016-8800',
+  },
+  {
+    id: 'item-6',
+    title: 'Algorithms Textbook',
+    description: 'Introduction to Algorithms (CLRS) 4th edition along with a spiral green notebook with lecture notes.',
+    type: 'lost',
+    category: 'Books & Notes',
+    location: 'CS Lab 4',
+    date: '2 days ago',
+    // No user-uploaded image -> displays predefined "Books & Notes" fallback image
+    imageUrl: undefined,
+    contactName: 'Daniel Kim',
+    contactPhone: '+1 (555) 017-3399',
+  },
+  {
+    id: 'item-7',
+    title: 'North Face Black Hoodie',
+    description: 'Size Medium black fleece hoodie left on the indoor bleachers after intramural basketball games.',
+    type: 'found',
+    category: 'Clothing',
+    location: 'Sports Arena',
+    date: '3 days ago',
+    // User-uploaded photo
+    imageUrl: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=600&auto=format&fit=crop&q=80',
+    contactName: 'Athletics Desk',
+    contactPhone: '+1 (555) 011-5522',
+  },
+  {
+    id: 'item-8',
+    title: '67W USB-C Fast Charger',
+    description: 'White Apple braided USB-C cable and 67W power adapter forgotten in the quiet study hub.',
+    type: 'lost',
+    category: 'Electronics',
+    location: 'Study Hub A',
+    date: '3 days ago',
+    // User-uploaded photo
+    imageUrl: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=600&auto=format&fit=crop&q=80',
+    contactName: 'Sarah Jenkins',
+    contactPhone: '+1 (555) 015-6677',
+  },
+];
